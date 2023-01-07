@@ -20,6 +20,7 @@ const connection = mysql.createConnection({
   database: 'heroku_432fe4c4ed13304'
 })
 
+
 connection.connect()
 
 app.use(cors({ origin: '*' }))
@@ -68,9 +69,3 @@ app.get('/crash-events/:reportNumber', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
-
-// on node terminatation, close the connection
-process.on('SIGINT', () => {
-    connection.end()
-    process.exit()
-    })
