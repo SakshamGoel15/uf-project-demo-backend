@@ -6,12 +6,18 @@ const mysql = require('mysql')
 const app = express()
 const port = 5001
 
+// const connection = mysql.createConnection({
+//   host: '127.0.0.1',
+//   user: 'root',
+//   password: '',
+//   database: 'UF_PROJECT_DEMO',
+//   port: 3306
+// })
 const connection = mysql.createConnection({
-  host: '127.0.0.1',
-  user: 'root',
-  password: '',
-  database: 'UF_PROJECT_DEMO',
-  port: 3306
+  host: 'us-cdbr-east-06.cleardb.net',
+  user: 'b054bc19623fdd',
+  password: '312dac91',
+  database: 'heroku_432fe4c4ed13304'
 })
 
 connection.connect()
