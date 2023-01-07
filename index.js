@@ -21,7 +21,7 @@ const connection = mysql.createPool({
 })
 
 
-connection.connect()
+// connection.connect()
 
 app.use(cors({ origin: '*' }))
 app.use(bodyParser.json())
