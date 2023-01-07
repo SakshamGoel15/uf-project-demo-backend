@@ -13,7 +13,7 @@ const port = process.env.PORT || 5001
 //   database: 'UF_PROJECT_DEMO',
 //   port: 3306
 // })
-const connection = mysql.createConnection({
+const connection = mysql.createPool({
   host: 'us-cdbr-east-06.cleardb.net',
   user: 'b054bc19623fdd',
   password: '312dac91',
